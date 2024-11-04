@@ -36,15 +36,15 @@ services:
         API_V1_WRITE_METHODS_DISABLED: "false"
         CACHE_TOTAL_GAS_USAGE_COUNTER_ENABLED: ""
         CACHE_ADDRESS_WITH_BALANCES_UPDATE_INTERVAL: ""
-        ADMIN_PANEL_ENABLED: ""
+        ADMIN_PANEL_ENABLED: "true"
         RELEASE_VERSION: 6.9.0
     links:
       - db:database
     environment:
-        ETHEREUM_JSONRPC_HTTP_URL: http://host.docker.internal:8545/
-        ETHEREUM_JSONRPC_TRACE_URL: http://host.docker.internal:8545/
-        ETHEREUM_JSONRPC_WS_URL: ws://host.docker.internal:8545/
-        CHAIN_ID: '1337'
+        ETHEREUM_JSONRPC_HTTP_URL: http://c3n3.thepower.io:1083/jsonrpc?pwrtx=1
+        ETHEREUM_JSONRPC_TRACE_URL: http://c3n3.thepower.io:1083/jsonrpc?pwrtx=1
+        # ETHEREUM_JSONRPC_WS_URL: ws://host.docker.internal:8545/
+        CHAIN_ID: '1000000003'
 
   visualizer:
     extends:
