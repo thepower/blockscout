@@ -41,8 +41,8 @@ services:
     links:
       - db:database
     environment:
-        ETHEREUM_JSONRPC_HTTP_URL: http://c3n3.thepower.io:1083/jsonrpc?pwrtx=1
-        ETHEREUM_JSONRPC_TRACE_URL: http://c3n3.thepower.io:1083/jsonrpc?pwrtx=1
+        ETHEREUM_JSONRPC_HTTP_URL: http://c3n3.thepower.io:1083/jsonrpc
+        ETHEREUM_JSONRPC_TRACE_URL: http://c3n3.thepower.io:1083/jsonrpc
         # ETHEREUM_JSONRPC_WS_URL: ws://host.docker.internal:8545/
         CHAIN_ID: '1000000003'
 
